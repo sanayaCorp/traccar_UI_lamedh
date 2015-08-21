@@ -297,15 +297,13 @@ public class DeviceView implements RowMouseDownEvent.RowMouseDownHandler, CellDo
          * event-Tab from deviceEvent
          */
       
-        // eventTabConfig = new TabItemConfig(i18n.overlayType(UserSettings.OverlayType.EVENTS));
+        eventTabConfig = new TabItemConfig(i18n.overlayType(UserSettings.OverlayType.EVENTS));
         
-        eventTabConfig = new TabItemConfig("Events");
+//        eventTabConfig = new TabItemConfig("Events");
 
-        //EventProperties eventProperties = GWT.create(EventProperties.class);
+        EventProperties eventProperties = GWT.create(EventProperties.class);
         
-        // eventTabConfig = new TabItemConfig(i18n.overlayType(UserSettings.OverlayType.valueOf("Event")));
-        //eventTabConfig = new TabItemConfig("Events");
- 
+         
         // tab panel
         objectsTabs = new TabPanel(GWT.<TabPanelAppearance>create(BlueTabPanelBottomAppearance.class));
 
